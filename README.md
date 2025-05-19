@@ -1,4 +1,4 @@
-# 🧑‍⚕️ MediBox – IoT-Powered Medicine & Environment Manager
+# 🧑‍⚕️ MediBox – IoT-Powered Medicine Reminder 
 
 MediBox is a **smart, connected health assistant** built using **ESP32**. It offers **medicine scheduling**, **environmental monitoring**, and **remote parameter control** via **MQTT** and **Node-RED**. Simulated on **Wokwi** and ready for **real-world deployment**.
 
