@@ -34,9 +34,9 @@ MediBox is a **smart, connected health assistant** built using **ESP32**. It off
 | 📡 **ESP32**          | Wi-Fi-enabled microcontroller                   |
 | 🌬️ **DHT22 Sensor**   | Temperature & Humidity measurement              |
 | 💡 **LDR Sensor**     | Light intensity detection                       |
-| ⚙️ **Servo Motor**    | Angle adjustment based on environment           |
+| ⚙️ **Servo Motor**    | Adjusting shaded sliding window                 |
 | 🖲️ **Push Buttons**   | User interaction for setting & navigation       |
-| 📢 **Buzzer & LED**    | Audio-visual medicine reminders                 |
+| 📢 **Buzzer & LED**    | Audio-visual medicine reminders and environmental monitoring                |
 | 🖥️ **OLED Display**   | User interface                                  |
 | 🛰️ **Node-RED Dashboard** | Cloud-based control & visualization       |
 
