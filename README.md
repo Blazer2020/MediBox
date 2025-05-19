@@ -1,72 +1,78 @@
-🧑‍⚕️ MediBox – IoT-Powered Medicine Reminder System
-MediBox is a smart, connected health assistant built using ESP32. It offers medicine scheduling, environmental monitoring, and remote parameter control via MQTT and Node-RED. Simulated on Wokwi and ready for real-world deployment.
+# 🧑‍⚕️ MediBox – IoT-Powered Medicine & Environment Manager
 
-🎯 Core Capabilities
-🕑 Smart Medicine Reminders
-Manage two fully configurable alarms.
+MediBox is a **smart, connected health assistant** built using **ESP32**. It offers **medicine scheduling**, **environmental monitoring**, and **remote parameter control** via **MQTT** and **Node-RED**. Simulated on **Wokwi** and ready for **real-world deployment**.
 
-Snooze support with retry limits.
+---
 
-Push-button interface for on-device configuration.
+## 🎯 Core Capabilities
 
-Buzzer and LED notifications when it’s time.
+### 🕑 Smart Medicine Reminders
+- Manage **two fully configurable alarms**.
+- **Snooze support** with retry limits.
+- **Push-button interface** for on-device configuration.
+- **Buzzer** and **LED** notifications when it’s time.
 
-🌡️ Live Environment Monitoring
-DHT22 sensor tracks temperature and humidity.
+### 🌡️ Live Environment Monitoring
+- **DHT22 sensor** tracks temperature and humidity.
+- **LDR sensor** measures ambient light conditions.
+- Real-time **servo adjustment** based on light and temperature using mathematical control logic.
 
-LDR sensor measures ambient light conditions.
+### 🖥️ Local Display & Navigation
+- **OLED display** shows time, alarms, and system status.
+- **Physical buttons** for menu navigation and interaction.
 
-Real-time servo adjustment based on light and temperature using mathematical control logic.
+### 🌐 Remote Connectivity & Control
+- **MQTT publishing** to send sensor data to the cloud.
+- **Node-RED dashboard** for live visualization and parameter tuning.
 
-🖥️ Local Display & Navigation
-OLED display shows time, alarms, and system status.
+---
 
-Physical buttons for menu navigation and interaction.
+## 🏗️ System Overview
 
-🌐 Remote Connectivity & Control
-MQTT publishing to send sensor data to the cloud.
+| 🛠️ **Component**      | **Description**                                |
+|-----------------------|-------------------------------------------------|
+| 📡 **ESP32**          | Wi-Fi-enabled microcontroller                   |
+| 🌬️ **DHT22 Sensor**   | Temperature & Humidity measurement              |
+| 💡 **LDR Sensor**     | Light intensity detection                       |
+| ⚙️ **Servo Motor**    | Angle adjustment based on environment           |
+| 🖲️ **Push Buttons**   | User interaction for setting & navigation       |
+| 📢 **Buzzer & LED**    | Audio-visual medicine reminders                 |
+| 🖥️ **OLED Display**   | User interface                                  |
+| 🛰️ **Node-RED Dashboard** | Cloud-based control & visualization       |
 
-Node-RED dashboard for live visualization and parameter tuning.
+---
 
-🏗️ System Overview
-🛠️ Component	Description
-📡 ESP32	Wi-Fi-enabled microcontroller
-🌬️ DHT22 Sensor	Temperature & Humidity measurement
-💡 LDR Sensor	Light intensity detection
-⚙️ Servo Motor	Angle adjustment based on environment
-🖲️ Push Buttons	User interaction for setting & navigation
-📢 Buzzer & LED	Audio-visual medicine reminders
-🖥️ OLED Display	User interface
-🛰️ Node-RED Dashboard	Cloud-based control & visualization
+## 🗂️ Project Architecture
 
-🗂️ Project Architecture
-Hardware Functions
+1. **Hardware Functions**
+   - **Inputs:** DHT22, LDR, Buttons
+   - **Outputs:** Servo, Buzzer, LED, OLED
 
-Inputs: DHT22, LDR, Buttons
+2. **Cloud Connectivity**
+   - MQTT topics for:
+     - `Ts` – Sampling Interval
+     - `Tu` – Sending Interval
+     - `offset` – Servo Offset
+     - `gamma` – Control Factor
+     - `Tmed` – Target Temperature
 
-Outputs: Servo, Buzzer, LED, OLED
+3. **Control Logic**
+   - **Mathematical model** for servo positioning.
+   - **Alarm system** with snooze management.
 
-Cloud Connectivity
+---
 
-MQTT topics for:
+## 📸 System Demo
 
-Ts – Sampling Interval
+### 🔌 Try the project now on **Wokwi**: 
+![Simulation](simulation.png) 
+👉 [Open MediBox Simulation](https://wokwi.com/projects/1234567890abcdef)
 
-Tu – Sending Interval
 
-offset – Servo Offset
+### 📊 Node-RED Control Panel
+![Dashboard](dashboard.png)
+👉 [Open Nodered Dashboard](https://medibox.flowfuse.cloud/ui/#!/0?socketid=9VnMcR1psmGuU5jqAAB3)
 
-gamma – Control Factor
+---
 
-Tmed – Target Temperature
 
-Control Logic
-
-Mathematical model for servo positioning.
-
-Alarm system with snooze management.
-
-📸 System Demo
-🔌 Hardware Simulation (Wokwi)
-
-📊 Node-RED Control Panel
