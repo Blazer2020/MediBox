@@ -65,12 +65,12 @@ MediBox is a **smart, connected health assistant** built using **ESP32**. It off
 ## 📸 System Demo
 
 ### 🔌 Try the project now on **Wokwi**: 
-![Simulation](simulation.png) 
+![Simulation Overview](images/simulation.png)
 👉 [Open MediBox Simulation](https://wokwi.com/projects/1234567890abcdef)
 
 
 ### 📊 Node-RED Control Panel
-![Dashboard](dashboard.png)
+![Node-RED Dashboard](images/dashboard.png)
 👉 [Open Nodered Dashboard](https://medibox.flowfuse.cloud/ui/#!/0?socketid=9VnMcR1psmGuU5jqAAB3)
 
 ---
