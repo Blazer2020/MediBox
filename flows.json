@@ -1,0 +1,681 @@
+[
+    {
+        "id": "66ad4c5ebb8780ed",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0345eec4e38d9529",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d7c378608d191d85",
+        "type": "ui_tab",
+        "name": "MediBox",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d845468d2e00f142",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#ae00d1",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#ae00d1",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ae00d1",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#d91eff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#ae00d1",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "MediBox Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 10,
+                "gy": 10,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "16962af86308e466",
+        "type": "ui_group",
+        "name": "Light Intensity",
+        "tab": "d7c378608d191d85",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b050b13b6cfa6020",
+        "type": "ui_group",
+        "name": "Angle",
+        "tab": "d7c378608d191d85",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5d7d895be918423a",
+        "type": "ui_spacer",
+        "z": "66ad4c5ebb8780ed",
+        "name": "spacer",
+        "group": "",
+        "order": 2,
+        "width": 27,
+        "height": 1
+    },
+    {
+        "id": "8c36ea0408d52cfc",
+        "type": "ui_spacer",
+        "z": "66ad4c5ebb8780ed",
+        "name": "spacer",
+        "group": "",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "a9828ca883ac8da6",
+        "type": "ui_spacer",
+        "z": "66ad4c5ebb8780ed",
+        "name": "spacer",
+        "group": "",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "ac56cbc9f302356c",
+        "type": "ui_spacer",
+        "z": "66ad4c5ebb8780ed",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ab9aa963f92376a5",
+        "type": "ui_spacer",
+        "z": "66ad4c5ebb8780ed",
+        "name": "spacer",
+        "group": "",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c81cd206d8359fac",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "d7c378608d191d85",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c4f9b54d6a1cf478",
+        "type": "ui_spacer",
+        "z": "66ad4c5ebb8780ed",
+        "name": "spacer",
+        "group": "16962af86308e466",
+        "order": 4,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "af506088064bc38c",
+        "type": "ui_spacer",
+        "z": "66ad4c5ebb8780ed",
+        "name": "spacer",
+        "group": "16962af86308e466",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "910775527badbc77",
+        "type": "mqtt in",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "topic": "Medibox_220705M/LightIntensity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "0345eec4e38d9529",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "42ebb9e491355486",
+                "0cad16551c81ee9c",
+                "22ed53d3de271b0a"
+            ]
+        ]
+    },
+    {
+        "id": "42ebb9e491355486",
+        "type": "ui_gauge",
+        "z": "66ad4c5ebb8780ed",
+        "name": "Light Intensity",
+        "group": "16962af86308e466",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Light Intensity",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "0.33",
+        "seg2": "0.66",
+        "diff": false,
+        "className": "",
+        "x": 560,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "0cad16551c81ee9c",
+        "type": "ui_chart",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "group": "16962af86308e466",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 530,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce98bb6f3c2a72f3",
+        "type": "ui_slider",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "label": "Sampling Interval (ts)",
+        "tooltip": "",
+        "group": "16962af86308e466",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "1",
+        "max": "20",
+        "step": 1,
+        "className": "",
+        "x": 900,
+        "y": 280,
+        "wires": [
+            [
+                "dfde596ffb319eda"
+            ]
+        ]
+    },
+    {
+        "id": "e6275e135f259043",
+        "type": "ui_slider",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "label": "Sending Interval (tu)",
+        "tooltip": "",
+        "group": "16962af86308e466",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "1",
+        "max": "20",
+        "step": 1,
+        "className": "",
+        "x": 900,
+        "y": 340,
+        "wires": [
+            [
+                "62e40ee6e2813257"
+            ]
+        ]
+    },
+    {
+        "id": "22ed53d3de271b0a",
+        "type": "debug",
+        "z": "66ad4c5ebb8780ed",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6d8da9379e4ff5cf",
+        "type": "ui_slider",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "label": "Offset angle (θoffset)",
+        "tooltip": "",
+        "group": "b050b13b6cfa6020",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "120",
+        "step": 1,
+        "className": "",
+        "x": 900,
+        "y": 440,
+        "wires": [
+            [
+                "403a4c3f80d38b39"
+            ]
+        ]
+    },
+    {
+        "id": "d325c5162293fa4b",
+        "type": "ui_slider",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "label": " controlling  factor (γ)",
+        "tooltip": "",
+        "group": "b050b13b6cfa6020",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "1",
+        "step": "0.01",
+        "className": "",
+        "x": 910,
+        "y": 500,
+        "wires": [
+            [
+                "a1171a9cbdaa3a5f"
+            ]
+        ]
+    },
+    {
+        "id": "157dc800dfe98b05",
+        "type": "ui_slider",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "label": "Storage Temperature  (Tmed).",
+        "tooltip": "",
+        "group": "b050b13b6cfa6020",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "10",
+        "max": "40",
+        "step": 1,
+        "className": "",
+        "x": 870,
+        "y": 560,
+        "wires": [
+            [
+                "518a0c4e93f88176"
+            ]
+        ]
+    },
+    {
+        "id": "403a4c3f80d38b39",
+        "type": "mqtt out",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "topic": "Medibox_220705M/offset",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0345eec4e38d9529",
+        "x": 1270,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a1171a9cbdaa3a5f",
+        "type": "mqtt out",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "topic": "Medibox_220705M/gamma",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0345eec4e38d9529",
+        "x": 1280,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "518a0c4e93f88176",
+        "type": "mqtt out",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "topic": "Medibox_220705M/Tmed",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0345eec4e38d9529",
+        "x": 1270,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "dfde596ffb319eda",
+        "type": "mqtt out",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "topic": "Medibox_220705M/Ts",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0345eec4e38d9529",
+        "x": 1260,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "62e40ee6e2813257",
+        "type": "mqtt out",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "topic": "Medibox_220705M/Tu",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0345eec4e38d9529",
+        "x": 1260,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "622c2422f118ee58",
+        "type": "mqtt in",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "topic": "Medibox_220705M/Temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0345eec4e38d9529",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "a26ba5ce89eb9f27",
+                "4e244820b02e9355"
+            ]
+        ]
+    },
+    {
+        "id": "a26ba5ce89eb9f27",
+        "type": "ui_gauge",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "group": "c81cd206d8359fac",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "10",
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "22",
+        "seg2": "32",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4e244820b02e9355",
+        "type": "ui_chart",
+        "z": "66ad4c5ebb8780ed",
+        "name": "",
+        "group": "c81cd206d8359fac",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 450,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    }
+]
